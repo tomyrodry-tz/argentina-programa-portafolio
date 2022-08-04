@@ -1,3 +1,379 @@
-.body{
+body{
+    margin: 2%;
+}
+h1,h2,h3,h4{
+    font-family: 'Merriweather', serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+/*--------------- HEADER -------------*/
+header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+}
+header .argPrograma{
+    display: flex;
+    width: 17%;
+    height: 100%;
+    border: 5px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 3%;
+    text-align: center;
+    align-items: center;
+}
+.argPrograma img{
+    width: 20%;
+    height: 15%;
+    margin-left: 5%;
+}
+header .botonesHeader{
+    display: flex;
+    width: 17%;
+    height: 100%;
+    border: 5px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 3%;
+    text-align: center;
+    align-items: center;
+    margin-left: 70%;
+}
+.redes{
+    display: flex;
+    margin-left: 2%;
+}
+.redes:hover{
+      opacity: 0.7;
+}
+.redes img{
+    width: 80%;
+    height: 80%;
+}
+.botones2{
+    background-color: black;
+    width: 50%;
+    height: 30%;
+    color: white;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 10%;
+}
+/*--------------- BANNER -------------*/
 
+
+/*--------------- A -------------*/
+.acercademi{
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+.carta{
+    width: 20%;
+    height: 90%;
+    border: 4px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 6.2%;
+    box-shadow: 10px 10px  rgba(71, 108, 237, 0.21);
+}
+.carta img{
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+}
+.carta h2{
+    width: 80%;
+    height: 10%;
+    padding: 2%;
+    margin-left: 8%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 5px;
+    text-align: center;
+}
+.carta h3{
+    width: 80%;
+    height: 20%;
+    padding: 2%;
+    margin-left: 8%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 5px;
+    text-align: center;
+}
+.infoA{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+}
+.lineaA{
+    display: inline-block;
+    height: 5px;
+    width: 90%;
+    border-radius: 10%;
+    background-color: rgba(71, 108, 237, 0.75);
+    position: relative;
+    top: 29%;
+}
+.tituloA{
+    background-color: white;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    position: relative;
+}
+.textoA{
+    width: 90%;
+    height: 70%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+    text-align: justify;
+}
+.textoA p{
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+/* ------------------ B -------------------*/
+.experiencia{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 2%;
+}
+.imgB{
+    width: 20%;
+    height: 100%;
+    border: 4px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 6.2%;
+}
+.infoB{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+}
+.lineaB{
+    display: inline-block;
+    height: 5px;
+    width: 95%;
+    border-radius: 10%;
+    background-color: rgba(71, 108, 237, 0.75);
+    position: relative;
+    top: 30%;
+}
+.tituloB{
+    background-color: white;
+    width: 20%;
+    height: 15%;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 7%;
+    position: relative;
+}
+.textoB{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+    padding-right: 5%;
+}
+.textoB p{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.textoB2{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+    margin-top: 2%;
+    padding-right: 5%;
+}
+.textoB2 p{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.imgB2{
+    width: 20%;
+    height: 100%;
+    border: 4px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 24%;
+}
+
+/* ------------------ C -------------------*/
+.educacion{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 25%;
+}
+.imgC{
+    width: 20%;
+    height: 100%;
+    border: 4px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 24%;
+}
+.infoC{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+}
+.lineaC{
+    display: inline-block;
+    height: 5px;
+    width: 95%;
+    border-radius: 10%;
+    background-color: rgba(71, 108, 237, 0.75);
+    position: relative;
+    top: 30%;
+}
+.tituloC{
+    background-color: white;
+    width: 20%;
+    height: 15%;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 7%;
+    position: relative;
+}
+.textoC{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+    padding-right: 5%;
+}
+.textoC p{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.textoC2{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+    margin-top: 2%;
+    padding-right: 5%;
+}
+.textoC2 p{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.imgC2{
+    width: 20%;
+    height: 100%;
+    border: 4px solid;
+    border-color: rgba(71, 108, 237, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 6.2%;
+}
+/* ------------------ D -------------------*/
+.skills{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 25%;
+    margin-left: 7.5%;
+    margin-right: 5%;
+}
+.infoD{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+}
+.lineaD{
+    display: inline-block;
+    height: 5px;
+    width: 90%;
+    border-radius: 10%;
+    background-color: rgba(71, 108, 237, 0.75);
+    position: relative;
+    top: 30%;
+}
+.tituloD{
+    background-color: white;
+    width: 15%;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 37%;
+    margin-top: 6%;
+    margin-bottom: 1%;
+    position: relative;
+}
+.textoD{
+    position: inherit;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(71, 108, 237, 0.21);
+    border-radius: 2px;
+}
+.textoD p{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+/* ------------------ E -------------------*/
+.proyectos{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 7.5%;
+    margin-right: 5%;
+}
+.infoE{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+}
+.lineaE{
+    display: inline-block;
+    height: 5px;
+    width: 90%;
+    border-radius: 10%;
+    background-color: rgba(71, 108, 237, 0.75);
+    position: relative;
+    top: 30%;
+}
+.tituloE{
+    background-color: white;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 6%;
+    margin-bottom: 1%;
+    position: relative;
+}
+.trabajos{
+    position: inherit;
+    width: 90%;
+    height: 80%;
+    background-color: grey;
+    border-radius: 2px;
 }
