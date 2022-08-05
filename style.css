@@ -19,8 +19,6 @@ header{
     background-color: white;
     border: 5px solid;
     border-color: rgba(71, 108, 237, 0.75);
-    width: 100%;
-    height: 80%;
     position: sticky;
     top: 0px;
     position: -webkit-sticky;
@@ -150,11 +148,10 @@ header .botonesHeader{
 /*--------------- A -------------*/
 .acercademi{
     display: flex;
-    width: 100%;
     height: 350px;
 }
 .carta{
-    width: 20%;
+    width: 18%;
     height: 90%;
     border: 4px solid;
     border-color: rgba(71, 108, 237, 0.75);
@@ -191,15 +188,15 @@ header .botonesHeader{
     text-align: center;
 }
 .infoA{
-    width: 80%;
+    width: 85%;
     height: 100%;
     align-items: center;
-    margin-left: 3%;
+    margin-left: 2%;
 }
 .lineaA{
     display: inline-block;
     height: 5px;
-    width: 90%;
+    width: 91%;
     border-radius: 10%;
     background-color: rgba(71, 108, 237, 0.75);
     position: relative;
@@ -216,7 +213,7 @@ header .botonesHeader{
     position: relative;
 }
 .textoA{
-    width: 90%;
+    width: 91%;
     height: 70%;
     background-color: rgba(71, 108, 237, 0.21);
     border-radius: 2px;
@@ -231,7 +228,6 @@ header .botonesHeader{
 /* ------------------ B -------------------*/
 .experiencia{
     display: flex;
-    width: 100%;
     height: 300px;
     margin-top: 2%;
 }
@@ -304,7 +300,6 @@ header .botonesHeader{
 /* ------------------ C -------------------*/
 .educacion{
     display: flex;
-    width: 100%;
     height: 300px;
     margin-top: 25%;
 }
@@ -376,7 +371,6 @@ header .botonesHeader{
 /* ------------------ D -------------------*/
 .skills{
     display: flex;
-    width: 100%;
     height: 300px;
     margin-top: 25%;
     margin-left: 7.5%;
@@ -421,7 +415,6 @@ header .botonesHeader{
 /* ------------------ E -------------------*/
 .proyectos{
     display: flex;
-    width: 100%;
     height: 300px;
     margin-top: 5%;
     margin-left: 10%;
