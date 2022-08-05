@@ -8,58 +8,141 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
 }
+span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20%;
+}
 /*--------------- HEADER -------------*/
 header{
     display: flex;
     background-color: white;
+    border: 5px solid;
+    border-color: rgba(71, 108, 237, 0.75);
     width: 100%;
-    height: 20%;
+    height: 80%;
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    z-index: 99;
 }
 header .argPrograma{
     display: flex;
-    width: 17%;
+    width: 20%;
     height: 100%;
-    border: 5px solid;
-    border-color: rgba(71, 108, 237, 0.75);
-    border-radius: 3%;
     text-align: center;
     align-items: center;
 }
 .argPrograma img{
-    width: 20%;
+    width: 40%;
     height: 15%;
     margin-left: 5%;
 }
 header .botonesHeader{
     display: flex;
-    width: 17%;
+    width: 40%;
     height: 100%;
-    border: 5px solid;
-    border-color: rgba(71, 108, 237, 0.75);
-    border-radius: 3%;
-    text-align: center;
     align-items: center;
     margin-left: 70%;
+    margin-top: 1%;
 }
 .redes{
-    display: flex;
-    margin-left: 2%;
-}
-.redes:hover{
-      opacity: 0.7;
-}
-.redes img{
     width: 80%;
-    height: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
+/*--------------------------- POP UP DISCORD ------------------------------- */
+.discord{
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.email{
+    margin-top: 5%;
+    margin-left: 25%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*------------------------------- The actual popup --------------------------*/
+.discord .mydiscord{
+    visibility: hidden;
+    width: 170px;
+    background-color: rgba(71, 108, 237, 1);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -80px;
+}
+.email .myemail{
+    visibility: hidden;
+    width: 170px;
+    background-color: rgba(71, 108, 237, 1);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -80px;
+}  
+/*----------------------------- Popup arrow ---------------------------------*/
+.discord .mydiscord::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 53%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(71, 108, 237, 1) transparent transparent transparent;
+}
+.email .myemail::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 53%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(71, 108, 237, 1) transparent transparent transparent;
+}  
+/*--------------- Toggle this class - hide and show the popup ---------------*/
+.discord .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.email .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+/*--------------- Editar & Login ---------------*/
 .botones2{
-    background-color: black;
     width: 50%;
     height: 30%;
     color: white;
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 15%;
     border-radius: 10%;
+
 }
 /*--------------- BANNER -------------*/
 
@@ -297,7 +380,6 @@ header .botonesHeader{
     height: 300px;
     margin-top: 25%;
     margin-left: 7.5%;
-    margin-right: 5%;
 }
 .infoD{
     width: 80%;
@@ -342,8 +424,7 @@ header .botonesHeader{
     width: 100%;
     height: 300px;
     margin-top: 5%;
-    margin-left: 7.5%;
-    margin-right: 5%;
+    margin-left: 10%;
 }
 .infoE{
     width: 80%;
