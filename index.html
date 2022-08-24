@@ -3,59 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Portafolio Web | Tomas Rodriguez</title>
 </head>
-<body id="body">
-    <header>
-        <div class="argPrograma">
-            <img src="img/logo-argprograma.JPG" alt="logo Argentina Programa">
-            <p style="font-size: 15px;margin-left: 10%;">Argentina Programa #YoProgrmo</p>
-        </div>
-        <div class="botonesHeader">
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/tomás-rodríguez-61711120b/" target="_blank"><img src="img/linkedin.png" style="width:100%;margin-top: 10%;margin-left: 10%;"></img></a>
-                <div class="discord" onclick="myFunction()">
-                  <img src="img/discord.png" style="width:220%; border-radius: 40%;"></img>
-                  <span class="mydiscord" id="mydiscord">Agregame<br>Tomas Rodriguez#3076</span>
-                </div>
-                <div class="email" onclick="myFunction2()">
-                    <img src="img/email.png" style="width:200%; border-radius: 10%;"></img>
-                    <span class="myemail" id="myemail">Mi Correo<br>tomyrodry.tz@gmail.com</span>
-                  </div>
-            </div>
-            <div class="botones2">
-                <button style="margin-left: 1%">Login</button>
-                <button style="margin-top: 10%;">Editar</button>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <div class="botonUp">
-        <a href="#body"><img src="img/botonUp.jpg" alt="Subir"></a>
-    </div>
-<div class="conteiner">
-    <div class="banner">
-        <p>banner/imagen</p>
-    </div>
-    <div class="acercademi">
-        <div class="carta">
-            <img src="img/yo.jpeg" alt="yo">
-            <h2 style="font-size: 23px;">Tomás Rodriguez</h2>
-            <div class="textoCarta2"><h3>Full Stack Developer Jr</h3></div>
-        </div>
-        <div class="infoA">
-            <div class="lineaA"></div>
-            <div class="tituloA">
-                <h2>ACERCA DE MI</h2>
+    <div class="container" id="inicio">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-info">
+            <div class="d-flex align-items-center justify-content-center col-md-3 mb-2 mb-md-0">
+                <img class="img-fluid"" style="width: 25%;;"src="img/logo-argprograma.JPG" alt="logo-arg-programa">
+                <p style="font-size: 15px; margin-left: 5%; padding-top: 5%;">Argentina Programa #YoProgramo</p>
             </div>
-            <div class="textoA">
-                <p>Naci en Tres Arroyos, Buenos Aires, Argentina (21/03/2000).
+    
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#acercademi" class="nav-link px-2 link-dark">Acerca de Mi</a></li>
+                <li><a href="#exp" class="nav-link px-2 link-dark">Experiencia</a></li>
+                <li><a href="#educacion" class="nav-link px-2 link-dark">Educacion</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Skills</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Proyectos</a></li>
+            </ul>
+    
+            <div class="col-md-3 text-end">
+                <!-- <a href="https://www.linkedin.com/in/tomás-rodríguez-61711120b/"><img src="img/linkedin.svg" alt="icono linkedin" width="30" class="rounded img-fluid"fill="currentColor"></a>
+                <img src="img/mail.svg" alt="icono email" width="30" class="rounded img-fluid"> -->
+                <button type="button" class="btn btn-outline-info me-2">Login</button>
+                <button type="button" class="btn btn-secondary">Editar</button>
+            </div>
+        </header>
+    </div>
+    <div class="position-absolute bottom-0 end-0">
+        <a href="#inicio"><img src="img/arrow-up-circle.svg"  alt="irInicio" width="45"></a>
+    </div>
+    
+
+    <div class="container">
+        <img class="d-block mx-auto mb-4 img-fluid rounded shadow" src="img/banner.jpg">
+    </div>
+
+    <div class="container d-flex align-items-center" id="acercademi">
+        <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
+            <img src="img/yo.jpeg" class="card-img-top img-fluid " alt="mi cara">
+            <div class="card-body">
+              <h2 class="card-title border-info border rounded">Tomas Rodiguez</h2>
+              <h4 class="card-text border-info border rounded">Full Stack Developer Jr</h4>
+            </div>
+          </div>
+        <div class="ms-4 align-items-center">
+            <h2 class="mb-3 border-bottom border-3 border-info">ACERCA DE MI</h2>
+            <div class="texto">
+                <p class="mx-2 border-bottom border-3 border-info">
+                    Naci en Tres Arroyos, Buenos Aires, Argentina (21/03/2000).
                     <br>
                     <br>
                     Ahora mismo estoy estudiando Diseño Multimedial en la Facultad de Artes de La Plata, Argentina.
@@ -68,65 +72,53 @@
         </div>
     </div>
 
-    <div class="experiencia">
-        <div class="imgB">
-            <img src="" alt="">
+    <div class="container d-flex align-items-center justify-content-center" id="exp" style="margin-top: 5%;">
+        <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
+            <img src="img/imgB-1.jpg" class="card-img-top img-fluid  mt-2" alt="catalogo1">
+            <img src="img/imgB-2.jpg" class="card-img-top img-fluid  my-2" alt="catalogo1">
         </div>
-        <div class="infoB">
-            <div class="lineaB"></div>
-            <div class="tituloB">
-                <h2>EXPERIENCIA</h2>
-            </div>
-            <div class="textoB">
-            </div>
-            <div class="textoB2">
-            </div>
-        </div>
-        <div class="imgB2">
-            <img src="" alt="">
-        </div>
-    </div>
-
-    <div class="educacion">
-        <div class="imgC">
-            <img src="" alt="">
-        </div>
-        <div class="infoC">
-            <div class="lineaC"></div>
-            <div class="tituloC">
-                <h2>EDUCACIÓN</h2>
-            </div>
-            <div class="textoC">
-            </div>
-            <div class="textoC2">
+        <div class="mx-4 align-items-center">         
+            <h2 class="mb-3 border-bottom border-3 border-info">EXPERIENCIA</h2>
+            <div class="texto">
+                <p class="mx-2 border-bottom border-3 border-info">
+                    Apartir de Agosto del 2020 empece a trabajar como diseñador para Lac-Tres.
+                    <br>
+                    <br>
+                    Lac-Tres es un mayorista que se encuentra en mi ciudad natal (Tres Arroyos)
+                    <br>    
+                    <br>      
+                    Mi trabajo consiste en hacer catalogos y ayudar en el diseño y composicion del instagram de la compania.
+                </p>
             </div>
         </div>
-        <div class="imgC2">
-            <img src="" alt="">
+        <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
+            <img src="img/imgB2.jpg" class="card-img-top img-fluid  mt-2" alt="catalogo1" width="">
         </div>
     </div>
 
-    <div class="skills">
-        <div class="infoD">
-            <div class="lineaD"></div>
-            <div class="tituloD">
-                <h2>SKILLS</h2>
-            </div>
-            <div class="textoD">
+    <div class="container d-flex align-items-center" id="educacion" style="margin-top: 5%;">
+        <div class="card border-info border border-3 rounded shadow-lg" style="width: 20%; text-align: center;">
+            <img src="img/alumnoregular.jpg" class="card-img-top img-fluid " alt="mi cara">
+          </div>
+        <div class="ms-4 align-items-center">
+            <h2 class="mb-3 border-bottom border-3 border-info">EDUCACION</h2>
+            <div class="texto">
+                <p class="mx-2 border-bottom border-3 border-info">
+                    Fui a la secundaria N°1 en Tres Arroyos y me gradue en la rama de Naturalez.
+                    <br>
+                    <br>
+                    En 2018 ingrese a la Facultad de Artes de La Plata para estudiar Diseño Multimedial
+                    <br>    
+                    <br>      
+                    Actualmente me encuentro entre 4to y 5to año
+                </p>
             </div>
         </div>
     </div>
-    <div class="proyectos">
-        <div class="infoE">
-            <div class="lineaE"></div>
-            <div class="tituloE">
-                <h2>PROYECTOS</h2>
-            </div>
-            <div class="trabajos"></div>
-            <a href="http://127.0.0.1:5500/">VER</a>
-        </div>
-    </div>
-</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
