@@ -14,9 +14,11 @@
     <title>Portafolio Web | Tomas Rodriguez</title>
 </head>
 <body>
-
+<!-------------------------------- ALERTAS ------------------------------------------------------------------------------------->
     <div style="text-align: center;" id="alertaEdicion"></div>
+    <div id="alertaRedes"></div>
 
+<!-------------------------------- HEADER ------------------------------------------------------------------------------------->
     <div class="container" id="inicio">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-info">
             <div class="d-flex align-items-center justify-content-center col-md-3 mb-2 mb-md-0">
@@ -33,8 +35,7 @@
             </ul>
     
             <div class="col-md-3 text-end fw-bold">
-                <!-- <a href="https://www.linkedin.com/in/tomás-rodríguez-61711120b/"><img src="img/linkedin.svg" alt="icono linkedin" width="30" class="rounded img-fluid"fill="currentColor"></a>
-                <img src="img/mail.svg" alt="icono email" width="30" class="rounded img-fluid"> -->
+                <button type="button" class="btn btn-dark" id="redes">Redes</button>
                 <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#Modal">Login</button>
                 <button type="button" class="btn btn-secondary" id="editarBloqueado">Editar</button>
             </div>
@@ -60,16 +61,17 @@
         </div>
         </div>
     </div>
-
-    <div class="position-absolute bottom-0 end-0 me-4">
+<!-------------------------------- BOTON VOLVES AL INICO  ------------------------------------------------------------------------------------->
+    <!-- <div class="position-absolute bottom-0 end-0 me-4">
         <a href="#inicio"><img src="img/arrow-up-circle.svg"  alt="irInicio" width="45"></a>
-    </div>
+    </div> -->
     
-
+<!-------------------------------- BANNER ------------------------------------------------------------------------------------->
     <div class="container">
         <img class="d-block mx-auto mb-4 img-fluid rounded shadow" src="img/banner.jpg">
     </div>
 
+<!-------------------------------- ACERCA DE MI ------------------------------------------------------------------------------------->
     <div class="container d-flex align-items-center" id="acercademi">
         <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
             <img src="img/yo.jpeg" class="card-img-top img-fluid " alt="mi cara">
@@ -79,22 +81,29 @@
             </div>
           </div>
         <div class="ms-4 align-items-center">
-            <h2 class="mb-3 border-bottom border-3 border-info">ACERCA DE MI</h2>
-            <div class="texto">
-                <p class="mx-2 border-bottom border-3 border-info">
-                    Naci en Tres Arroyos, Buenos Aires, Argentina (21/03/2000).
-                    <br>
-                    <br>
-                    Ahora mismo estoy estudiando Diseño Multimedial en la Facultad de Artes de La Plata, Argentina.
-                    Estoy en el 4to/5to año de la carrera.
-                    <br>    
-                    <br>      
-                    Tengo un nivel medio de Ingles y estoy haciendo un curso para mejorarlo
-                </p>
+            <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
+                <button type="button" class="btn btn-secondary me-2" disabled>
+                    <img src="img/edit.svg" width="24" alt="botonEditar">
+                </button>
+                <button type="button" class="btn btn-secondary" disabled>
+                    <img src="img/x.svg" width="27" alt="botonBorrar">
+                </button>
             </div>
+            <h2 class="mb-3 border-bottom border-3 border-info">ACERCA DE MI</h2>
+            <p class="mx-2 border-bottom border-3 border-info">
+                Naci en Tres Arroyos, Buenos Aires, Argentina (21/03/2000).
+                <br>
+                <br>
+                Ahora mismo estoy estudiando Diseño Multimedial en la Facultad de Artes de La Plata, Argentina.
+                Estoy en el 4to/5to año de la carrera.
+                <br>    
+                <br>      
+                Tengo un nivel medio de Ingles y estoy haciendo un curso para mejorarlo
+            </p>
         </div>
     </div>
 
+<!-------------------------------- EXPERIENCIA ------------------------------------------------------------------------------------->
     <div class="container d-flex align-items-center justify-content-center" id="exp" style="margin-top: 5%;">
         <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
             <img src="img/imgB-1.jpg" class="card-img-top img-fluid  mt-2" alt="catalogo1">
@@ -102,45 +111,59 @@
         </div>
         <div class="mx-4 align-items-center">         
             <h2 class="mb-3 border-bottom border-3 border-info">EXPERIENCIA</h2>
-            <div class="texto">
-                <p class="mx-2 border-bottom border-3 border-info">
-                    Apartir de Agosto del 2020 empece a trabajar como diseñador para Lac-Tres.
-                    <br>
-                    <br>
-                    Lac-Tres es un mayorista que se encuentra en mi ciudad natal (Tres Arroyos)
-                    <br>    
-                    <br>      
-                    Mi trabajo consiste en hacer catalogos y ayudar en el diseño y composicion del instagram de la compania.
-                </p>
-            </div>
+            <p class="mx-2 border-bottom border-3 border-info">
+                Apartir de Agosto del 2020 empece a trabajar como diseñador para Lac-Tres.
+                <br>
+                <br>
+                Lac-Tres es un mayorista que se encuentra en mi ciudad natal (Tres Arroyos)
+                <br>    
+                <br>      
+                Mi trabajo consiste en hacer catalogos y ayudar en el diseño y composicion del instagram de la compania.
+            </p>
         </div>
         <div class="card border-info border border-3 rounded shadow-lg" style="width: 40%; text-align: center;">
             <img src="img/imgB2.jpg" class="card-img-top img-fluid  mt-2" alt="catalogo1" width="">
         </div>
     </div>
 
+<!-------------------------------- EDUCACION ------------------------------------------------------------------------------------->
     <div class="container d-flex align-items-center" id="educacion" style="margin-top: 5%;">
         <div class="card border-info border border-3 rounded shadow-lg" style="width: 20%; text-align: center;">
             <img src="img/alumnoregular.jpg" class="card-img-top img-fluid " alt="mi cara">
           </div>
         <div class="ms-4 align-items-center">
-            <h2 class="mb-3 border-bottom border-3 border-info">EDUCACION</h2>
-            <div class="texto">
-                <p class="mx-2 border-bottom border-3 border-info">
-                    Fui a la secundaria N°1 en Tres Arroyos y me gradue en la rama de Naturalez.
-                    <br>
-                    <br>
-                    En 2018 ingrese a la Facultad de Artes de La Plata para estudiar Diseño Multimedial
-                    <br>    
-                    <br>      
-                    Actualmente me encuentro entre 4to y 5to año
-                </p>
+            <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
+                <button type="button" class="btn btn-secondary me-2" disabled>
+                    <img src="img/edit.svg" width="24" alt="botonEditar">
+                </button>
+                <button type="button" class="btn btn-secondary" disabled>
+                    <img src="img/x.svg" width="27" alt="botonBorrar">
+                </button>
             </div>
+            <h2 class="mb-3 border-bottom border-3 border-info">EDUCACION</h2>
+            <p class="mx-2 border-bottom border-3 border-info">
+                Fui a la secundaria N°1 en Tres Arroyos y me gradue en la rama de Naturalez.
+                <br>
+                <br>
+                En 2018 ingrese a la Facultad de Artes de La Plata para estudiar Diseño Multimedial
+                <br>    
+                <br>      
+                Actualmente me encuentro entre 4to y 5to año
+             </p>
         </div>
     </div>
 
+<!-------------------------------- SKILLS ------------------------------------------------------------------------------------->
     <div class="container d-flex align-items-center" id="skills" style="margin-top: 5%;">
         <div class="ms-4 align-items-center">
+            <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
+                <button type="button" class="btn btn-secondary me-2" disabled>
+                    <img src="img/edit.svg" width="24" alt="botonEditar">
+                </button>
+                <button type="button" class="btn btn-secondary" disabled>
+                    <img src="img/x.svg" width="27" alt="botonBorrar">
+                </button>
+            </div>
             <h2 class="mb-3 border-bottom border-3 border-info">SKILLS</h2>
             <div class="row">
                 <div class="col"><img src="img/alumnoregular.jpg" alt="html" width="200"></div>
@@ -157,8 +180,17 @@
         </div>
     </div>
 
+<!-------------------------------- PROYECTOS ------------------------------------------------------------------------------------->
     <div class="container align-items-center" id="proyectos" style="margin-top: 5%; margin-bottom: 2%;">
         <div class="ms-4">
+            <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
+                <button type="button" class="btn btn-secondary me-2" disabled>
+                    <img src="img/edit.svg" width="24" alt="botonEditar">
+                </button>
+                <button type="button" class="btn btn-secondary" disabled>
+                    <img src="img/x.svg" width="27" alt="botonBorrar">
+                </button>
+            </div>
             <h2 class="mb-3 border-bottom border-3 border-info">PROYECTOS</h2>
         </div>
         <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
@@ -201,14 +233,10 @@
         </div>
     </div>
 
+<!-------------------------------- FOOTER ------------------------------------------------------------------------------------->
     <footer class="footer mt-auto py-3 bg-black">
         <div class="container" style="text-align: center;">
           <span class="text-muted fw-bold">Tomas Rodriguez</span>
-        </div>
-        <div class="container mt-2" style="text-align: center;">
-            <span class="text-muted fw-bold"><i class="bi bi-envelope me-2"></i>tomyrodry.tz@gmail.com</span>
-            <span class="text-muted ms-3 fw-bold"><i class="bi bi-telephone me-2"></i>(+54) 2983659702</span>
-            <span class="text-muted ms-4 fw-bold"><i class="bi bi-discord me-2"></i>TZ#8705</span>
         </div>
     </footer>
 
