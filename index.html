@@ -15,30 +15,53 @@
 </head>
 <body>
 
+    <div style="text-align: center;" id="alertaEdicion"></div>
+
     <div class="container" id="inicio">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-info">
             <div class="d-flex align-items-center justify-content-center col-md-3 mb-2 mb-md-0">
-                <img class="img-fluid"" style="width: 25%;;"src="img/logo-argprograma.JPG" alt="logo-arg-programa">
-                <p style="font-size: 15px; margin-left: 5%; padding-top: 5%;">Argentina Programa #YoProgramo</p>
+                <img class="img-fluid" style="width: 25%;;"src="img/logo-argprograma.JPG" alt="logo-arg-programa">
+                <p style="font-size: 15px; margin-left: 5%; margin-top: 5%;" class="fw-bold">Argentina Programa #YoProgramo</p>
             </div>
-    
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#acercademi" class="nav-link px-2 link-dark">Acerca de Mi</a></li>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav-pills fw-bold">
+                <li><a href="#acercademi" class="nav-link link-dark">Acerca de Mi</a></li>
                 <li><a href="#exp" class="nav-link px-2 link-dark">Experiencia</a></li>
                 <li><a href="#educacion" class="nav-link px-2 link-dark">Educacion</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Skills</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link px-2 link-dark">Skills</a></li>
+                <li><a href="#proyectos" class="nav-link px-2 link-dark">Proyectos</a></li>
             </ul>
     
-            <div class="col-md-3 text-end">
+            <div class="col-md-3 text-end fw-bold">
                 <!-- <a href="https://www.linkedin.com/in/tomás-rodríguez-61711120b/"><img src="img/linkedin.svg" alt="icono linkedin" width="30" class="rounded img-fluid"fill="currentColor"></a>
                 <img src="img/mail.svg" alt="icono email" width="30" class="rounded img-fluid"> -->
-                <button type="button" class="btn btn-outline-info me-2">Login</button>
-                <button type="button" class="btn btn-secondary">Editar</button>
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#Modal">Login</button>
+                <button type="button" class="btn btn-secondary" id="editarBloqueado">Editar</button>
             </div>
         </header>
     </div>
-    <div class="position-absolute bottom-0 end-0">
+
+<!-------------------------------- MODAL ------------------------------------------------------------------------------------->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <form class="mx-5 my-5">
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="InputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Acceder</button>
+              </form>
+        </div>
+        </div>
+    </div>
+
+    <div class="position-absolute bottom-0 end-0 me-4">
         <a href="#inicio"><img src="img/arrow-up-circle.svg"  alt="irInicio" width="45"></a>
     </div>
     
@@ -116,6 +139,78 @@
         </div>
     </div>
 
+    <div class="container d-flex align-items-center" id="skills" style="margin-top: 5%;">
+        <div class="ms-4 align-items-center">
+            <h2 class="mb-3 border-bottom border-3 border-info">SKILLS</h2>
+            <div class="row">
+                <div class="col"><img src="img/alumnoregular.jpg" alt="html" width="200"></div>
+                <div class="col"><img src="img/alumnoregular.jpg" alt="css" width="200"></div>
+                <div class="col"><img src="img/alumnoregular.jpg" alt="js" width="200"></div>
+                
+            </div>
+            <div class="row mt-3">
+                <div class="col"><img src="img/alumnoregular.jpg" alt="bootstrap" width="200"></div>
+                <div class="col"><img src="img/alumnoregular.jpg" alt="angular" width="200"></div>
+                <div class="col"><img src="img/alumnoregular.jpg" alt="mySQL" width="200"></div>
+                <div class="col"><img src="img/alumnoregular.jpg" alt="spirit boot" width="200"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container align-items-center" id="proyectos" style="margin-top: 5%; margin-bottom: 2%;">
+        <div class="ms-4">
+            <h2 class="mb-3 border-bottom border-3 border-info">PROYECTOS</h2>
+        </div>
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/yo.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-black">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/yo.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/yo.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-black">
+        <div class="container" style="text-align: center;">
+          <span class="text-muted fw-bold">Tomas Rodriguez</span>
+        </div>
+        <div class="container mt-2" style="text-align: center;">
+            <span class="text-muted fw-bold"><i class="bi bi-envelope me-2"></i>tomyrodry.tz@gmail.com</span>
+            <span class="text-muted ms-3 fw-bold"><i class="bi bi-telephone me-2"></i>(+54) 2983659702</span>
+            <span class="text-muted ms-4 fw-bold"><i class="bi bi-discord me-2"></i>TZ#8705</span>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
