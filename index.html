@@ -82,7 +82,7 @@
           </div>
         <div class="ms-4 align-items-center">
             <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
-                <button type="button" class="btn btn-secondary me-2" disabled>
+                <button type="button" class="btn btn-secondary me-2" onclick="cambiar_parrafo_acercademi()">
                     <img src="img/edit.svg" width="24" alt="botonEditar">
                 </button>
                 <button type="button" class="btn btn-secondary" disabled>
@@ -90,7 +90,10 @@
                 </button>
             </div>
             <h2 class="mb-3 border-bottom border-3 border-info">ACERCA DE MI</h2>
-            <p class="mx-2 border-bottom border-3 border-info">
+            <div>
+                <input class="btn border border-3 border-info mb-4" type="text" id="editar-acercademi" style="display: none;" oninput="myFunction(this.value)">
+            </div>
+            <p class="mx-2 border-bottom border-3 border-info" id="texto-acercademi">
                 Naci en Tres Arroyos, Buenos Aires, Argentina (21/03/2000).
                 <br>
                 <br>
@@ -109,9 +112,20 @@
             <img src="img/imgB-1.jpg" class="card-img-top img-fluid  mt-2" alt="catalogo1">
             <img src="img/imgB-2.jpg" class="card-img-top img-fluid  my-2" alt="catalogo2">
         </div>
-        <div class="mx-4 align-items-center">         
+        <div class="mx-4 align-items-center">
+            <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
+                <button type="button" class="btn btn-secondary me-2" onclick="cambiar_parrafo_exp()">
+                    <img src="img/edit.svg" width="24" alt="botonEditar">
+                </button>
+                <button type="button" class="btn btn-secondary" disabled>
+                    <img src="img/x.svg" width="27" alt="botonBorrar">
+                </button>
+            </div>     
             <h2 class="mb-3 border-bottom border-3 border-info">EXPERIENCIA</h2>
-            <p class="mx-2 border-bottom border-3 border-info">
+            <div>
+                <input class="btn border border-3 border-info mb-4" type="text" id="editar-exp" style="display: none;" oninput="myFunction2(this.value)">
+            </div>  
+            <p class="mx-2 border-bottom border-3 border-info" id="texto-exp">
                 Apartir de Agosto del 2020 empece a trabajar como diseñador para Lac-Tres.
                 <br>
                 <br>
@@ -134,7 +148,7 @@
           </div>
         <div class="ms-4 align-items-center" style="width: 100%;">
             <div class="d-flex" style="margin-left: 88%; border-radius: 25%;">
-                <button type="button" class="btn btn-secondary me-2" disabled>
+                <button type="button" class="btn btn-secondary me-2" onclick="cambiar_parrafo_educacion()">
                     <img src="img/edit.svg" width="24" alt="botonEditar">
                 </button>
                 <button type="button" class="btn btn-secondary" disabled>
@@ -142,7 +156,10 @@
                 </button>
             </div>
             <h2 class="mb-3 border-bottom border-3 border-info">EDUCACION</h2>
-            <p class="mx-2 border-bottom border-3 border-info">
+            <div>
+                <input class="btn border border-3 border-info mb-4" type="text" id="editar-educacion" style="display: none;" oninput="myFunction3(this.value)">
+            </div>  
+            <p class="mx-2 border-bottom border-3 border-info" id="texto-educacion">
                 Fui a la secundaria Media N°1 en Tres Arroyos y me gradue en la rama de Naturalez.
                 <br>
                 <br>
@@ -212,10 +229,13 @@
                     <img src="img/proyecto1.JPG" class="d-block my-4 py-2 px-2 border border-3 border-info border-end-0" style="margin-left: 10%; width: 40%;" alt="proyecto portafolio web">
                     <div class=" bg-black d-block my-4 border border-3 border-info border-start-0" style="margin-right: 10%; width: 40%; color: white;">
                         <h3 class="mt-4" style="text-align: center;">Portafolio Web</h3>
-                        <h5 class="mt-3 mx-5" style="text-align: center;">HTML, CSS, JS, Bootstrap, Angular, Spirit Boot y Heroku</h5>
+                        <h5 class="mt-3 mx-5" style="text-align: center;">HTML, CSS, JS, Bootstrap, Angular, Spirit Boot</h5>
                         <p class="mx-4">
                             <br>
                             A este proyecto lo empece el 20/8/22 haciendo bocetos en Figma y el 22/8 empece con la programacion.
+                            <br>
+                            <br>
+                            Este proyecto fue incentivado y hecho para el curso #YoProgramo
                             <br>
                             <br>
                             Este portafolio se puede encontrar tanto en github como en mi pagina
